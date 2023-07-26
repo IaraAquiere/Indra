@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Rubik+Puddles&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&family=Rubik+Puddles&family=Source+Code+Pro:wght@200&display=swap');
+
+@import 'catalogo';
+@import 'contacto';
+@import 'index';
+@import 'quienessomos';
+@import 'spreguntas';
+
+//footer y header iguales para todos//
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header img {
+    width: 300px;
+    padding: 10px;
+}
+
+header ul {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header li {
+    padding: 10px;
+}
+
+a {
+    color: rgb(214, 172, 121);
+    text-decoration: none;
+}
+
+h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+table {
+    margin: 0px;
+}
+
+main h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik Puddles', cursive;
+    font-family: 'Source Code Pro', monospace;
+}
+
+footer h4 {
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+table {
+    border-top: 1px thin solid;
+    border-bottom: 1px thin solid;
+}
+
+table tr td {
+    vertical-align: baseline;
+    padding: 10px;
+}
+
+
