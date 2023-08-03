@@ -13,6 +13,16 @@
   font-family: 'Source Code Pro', monospace;
   font-weight: 600px; }
 
+main {
+  min-height: 300px;
+  text-align: center;
+  padding: 20px; }
+  main div {
+    padding: 30px; }
+
+main {
+  min-height: 300px; }
+
 .main img {
   width: 300px; }
 
@@ -24,6 +34,9 @@
 
 .main .atrapasuenos {
   width: 1500px; }
+
+main p {
+  margin: auto; }
 
 .container {
   display: grid;
@@ -69,6 +82,9 @@
   font-family: 'Roboto Condensed', sans-serif;
   font-family: 'Rubik Puddles', cursive;
   font-family: 'Source Code Pro', monospace; }
+
+main h3 {
+  text-transform: uppercase; }
 
 * {
   font-family: sans-serif;
