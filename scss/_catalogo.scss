@@ -3,6 +3,7 @@
     width: 150px;
     margin: 5px;
     padding: 10px;
+    text-align: center;
 }
 
 .catalogo h2 {
@@ -11,3 +12,46 @@
     font-family: 'Source Code Pro', monospace;
     font-weight: 600px;
 }
+
+.producto {
+    text-align: center;
+    width: 1fr;
+    flex: 1;
+}
+
+.containerProductos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.produto__img:hover{
+    transition: all .4s ease-in-out;
+    transform: scale(1.3);
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 45%;
+    text-align: left;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .cuerpoCard {
+    padding: 2px 16px;
+    text-align: left;
+  }
+
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left : 5%;
+    padding-right : 5%;
+}
+

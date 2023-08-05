@@ -15,11 +15,11 @@
         <img src="../imagenes/Diseño sin título.png" alt="logo">
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./quienessomos.html">Sobre Mi</a></li>
-                <li><a href="./catalogo.html">Catalogo</a></li>
-                <li><a href="./spreguntas.html">Preguntas Frecuentes</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+                <li class="itemMenu"><a href="../index.html">Inicio</a></li>
+                <li class="itemMenu"><a href="./quienessomos.html">Sobre Mi</a></li>
+                <li class="itemMenu"><a href="./catalogo.html">Catalogo</a></li>
+                <li class="itemMenu"><a href="./spreguntas.html">Preguntas Frecuentes</a></li>
+                <li class="itemMenu"><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -30,21 +30,22 @@
             <h3>Direccion: guamini 6398 - Mataderos - Capital Federal</h3>
         </div>
 
-        <form class="form" action="#">
-            <h3>Nombre</h3>
-            <input type="text" name="Correo electronico">
-            <br>
-            <h3>Correo electronico</h3>
-            <input type="email" name="Correo electronico">
-            <br>
-            <h3>Telefono (opcional)</h3>
-            <input type="text" name="Telefono">
-            <br>
-            <h3>Mensaje (opcional)</h3>
-            <input type="text" name="Mensaje">
-            <br>
-            <input type="submit" value="Enviar">
-        </form>
+        <form>
+            <ul class="form-style-1">
+                <li><label>Nombre<span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="NOMBRE" /> <input type="text" name="field2" class="field-divided" placeholder="APELLIDO" /></li>
+                <li>
+                    <label>Email <span class="required">*</span></label>
+                    <input type="email" name="field3" class="field-long" />
+                </li>
+                <li>
+                    <label>MENSAJE/ CONSULTA<span class="required">*</span></label>
+                    <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+                </li>
+                <li>
+                    <input type="submit" value="ENVIAR" />
+                </li>
+            </ul>
+            </form>
     </main>
     <footer>
         <table>
