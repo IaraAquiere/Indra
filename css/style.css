@@ -157,31 +157,14 @@ main {
 main p {
   margin: auto; }
 
-.container {
+.grid-padre {
+  text-align: center;
+  padding: 7px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 1px;
-  grid-auto-flow: row;
-  grid-template-areas: "foto-1 foto-2 foto-3" "foto-4 foto-5 foto-6" ". . ."; }
-
-.foto-1 {
-  grid-area: foto-1; }
-
-.foto-2 {
-  grid-area: foto-2; }
-
-.foto-3 {
-  grid-area: foto-3; }
-
-.foto-4 {
-  grid-area: foto-4; }
-
-.foto-5 {
-  grid-area: foto-5; }
-
-.foto-6 {
-  grid-area: foto-6; }
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "daycare overnight walks" ". drop-in ."; }
 
 .medio img {
   width: 400px; }
@@ -245,13 +228,33 @@ main h3 {
   font-family: 'Rubik Puddles', cursive;
   font-family: 'Source Code Pro', monospace; }
 
-footer h4 {
-  text-align: center; }
+.footer {
+  grid-area: footer;
+  background-color: #d6ac79; }
 
-footer ul {
+.redes {
   list-style-type: none;
-  padding: 0px;
-  margin: 0px; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .redes li {
+    margin: 10px;
+    color: #ffffff;
+    font-size: 1.5rem; }
+
+.footer__barra-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  margin: 0px 30px; }
+  .footer__barra-contacto ul {
+    margin-bottom: 0;
+    padding-left: 0; }
+  .footer__barra-contacto a {
+    text-align: center; }
 
 table {
   border-top: 1px thin solid;
