@@ -154,17 +154,32 @@ main {
   width: 100%;
   height: 100px; }
 
-main p {
-  margin: auto; }
-
 .grid-padre {
   text-align: center;
   padding: 7px;
   display: grid;
   margin: auto;
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "daycare overnight walks" ". drop-in ."; }
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "tapiz funda tapizs" "tapizc plumas tapizl"; }
+
+.contenedortexto {
+  display: flex;
+  justify-content: center;
+  margin: auto; }
+
+.texto {
+  max-width: 900px;
+  text-align: center; }
+
+.texto p {
+  margin-bottom: 20px; }
+
+@media (max-width: 900px) {
+  .grid-padre {
+    display: flex;
+    flex-direction: column; } }
 
 .medio img {
   width: 400px; }
@@ -185,8 +200,20 @@ main p {
   font-family: 'Rubik Puddles', cursive;
   font-family: 'Source Code Pro', monospace; }
 
-main h3 {
-  text-transform: uppercase; }
+.ContenedorPreguntas {
+  display: flex;
+  justify-content: center;
+  margin: auto; }
+
+.preguntas {
+  max-width: 900px;
+  text-align: center; }
+
+.preguntas h3 {
+  margin-bottom: 20px; }
+
+.preguntas p {
+  margin-bottom: 20px; }
 
 * {
   font-family: sans-serif;
@@ -213,9 +240,10 @@ header ul {
 header li {
   padding: 10px; }
 
-a {
+.nav-link {
   color: #d6ac79;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: larger; }
 
 h3 {
   font-family: 'Roboto Condensed', sans-serif; }
@@ -253,8 +281,6 @@ main h3 {
   .footer__barra-contacto ul {
     margin-bottom: 0;
     padding-left: 0; }
-  .footer__barra-contacto a {
-    text-align: center; }
 
 table {
   border-top: 1px thin solid;
@@ -264,5 +290,9 @@ table tr td {
   vertical-align: baseline;
   padding: 10px; }
 
-.itemMenu:hover {
-  font-weight: bold; }
+.nav-link:hover {
+  font-weight: bold;
+  color: #d6ac79; }
+
+.active {
+  color: #d6ac79; }

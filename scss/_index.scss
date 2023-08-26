@@ -4,6 +4,8 @@ main {
     padding-right: 120px;
 }
 
+
+
 .main img {
     width: 300px;
 }
@@ -21,44 +23,41 @@ main {
     height: 100px;
 }
 
-main p {
-    margin: auto;
-}
-
-// .container {
-//     display: grid;
-//     grid-template-columns: 500px 300px 300px;
-//     grid-template-rows: 300px 300px 300px;
-//     gap: 0px 1px;
-//     grid-auto-flow: row;
-//     grid-template-areas:
-//         "foto-1 foto-2 foto-3"
-//         "foto-4 foto-5 foto-3"
-//         ". . .";
-// }
-
-// .foto-1 { grid-area: foto-1;
-// }
-
-// .foto-2 { grid-area: foto-2;
-// }
-
-// .foto-4 { grid-area: foto-4;
-// }
-
-// .foto-5 { grid-area: foto-5;
-// }
-// .foto-3 { grid-area: foto-3;
-// }
-
 .grid-padre {
     text-align: center;
     padding: 7px;
     display: grid;
     margin: auto;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-        "daycare overnight walks"
-        ". drop-in .";
+        "tapiz funda tapizs"
+        "tapizc plumas tapizl";
+    
+}
+
+.contenedortexto {
+    display: flex;
+    justify-content: center;
+    margin: auto
+}
+
+.texto {
+    max-width: 900px;
+    text-align: center;
+}
+
+
+
+.texto p {
+    margin-bottom: 20px;
+
+}
+
+@media (max-width:900px) {
+    .grid-padre{
+        display: flex;
+        flex-direction: column;
+    }
 }

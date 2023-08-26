@@ -4,8 +4,23 @@
     font-family: 'Source Code Pro', monospace;
 }
 
-main{
-    h3{
-        text-transform: uppercase;
-    }
+.ContenedorPreguntas {
+    display: flex;
+    justify-content: center;
+    margin: auto
+}
+
+.preguntas {
+    max-width: 900px;
+    text-align: center;
+}
+
+.preguntas h3 {
+    margin-bottom: 20px;
+
+}
+
+.preguntas p {
+    margin-bottom: 20px;
+
 }
